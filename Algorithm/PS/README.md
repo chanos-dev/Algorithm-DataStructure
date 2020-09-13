@@ -1,5 +1,3 @@
----
-
 ## Algorithm PS
 Site : [Baekjoon](https://www.acmicpc.net/)
 
