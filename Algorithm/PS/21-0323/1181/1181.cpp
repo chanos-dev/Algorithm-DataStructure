@@ -21,7 +21,7 @@ int main()
         strs.push_back({str.length(), str});
     }
 
-    //strs.sort(); 
+    strs.sort(); 
     strs.erase(unique(strs.begin(), strs.end()), strs.end());
     for(auto e : strs)
     {
