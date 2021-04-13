@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std; 
 
-int board[1001][1001]; 
-int idx = 0;
+int board[1001][1001];
 int M,N;
 
 int dx[4] = {1, 0, -1, 0};
@@ -14,7 +13,7 @@ int main()
     ios_base::sync_with_stdio(false); 
 
     int M,N;
-    bool noZero = true;
+    bool isZero = false;
     queue<pair<int,int>> q; 
 
     cin>>M>>N;     
@@ -26,17 +25,17 @@ int main()
 
             if(board[i][j] == 1) 
                 q.push({i, j}); 
-            else if(board[i][j] == 0) noZero = false;
+            else if(board[i][j] == 0) isZero = true;
         }
 
-    if (noZero)
+    if (!isZero)
     {
         cout<<"0";
         return 0;
     }
     
     int day = 0;  
-    
+
     while(!q.empty())
     {  
         pair<int, int> cur = q.front();
