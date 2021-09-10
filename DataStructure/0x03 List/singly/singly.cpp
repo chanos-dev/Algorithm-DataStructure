@@ -19,7 +19,7 @@ class LinkedList
         {
             Head = nullptr;
             Tail = nullptr;
-            count = 0;
+            count = 0; 
         }
         ~LinkedList() { }
 
@@ -37,11 +37,12 @@ class LinkedList
                 Tail = newNode;
             }
             else
-            {
-                Tail->Next = newNode;
-                Tail = newNode;
+            { 
+                Tail->Next = newNode; 
+                Tail = newNode; 
             }
             
+            cout<<"Add Node {"<<newNode->Data<<"}.\n";
         }
 
         void Remove(int data)
@@ -69,14 +70,19 @@ class LinkedList
                 {
                     if (ptr->Data == data)
                     {
+                        cout<<"Node->{"<<ptr->Data<<"} is removed.\n";
                         prev->Next = ptr->Next;
+
+                        if (ptr == Tail)
+                            Tail = prev;
+
                         free(ptr);
                         count--;
+                        break;
                     }
-                    else
-                    {
-                        ptr = ptr->Next;
-                    }
+
+                    prev = ptr;
+                    ptr = ptr->Next;                    
                 }
 
                 if (ptr == nullptr)
@@ -143,17 +149,23 @@ int main()
     mylist.Add(10);
     mylist.Add(20);
     mylist.Add(30);    
-    mylist.Remove(10);
+    mylist.Remove(30);
     mylist.Remove(20); 
-    mylist.Remove(5); 
-    mylist.Remove(10); 
-    mylist.Add(40);    
+    mylist.Remove(5);
+    mylist.Add(40);
     mylist.Add(20);    
     mylist.Add(10);    
     cout<<"find index is "<<mylist.Find(30)<<"\n";
     mylist.Display(); 
     cout<<"list count is "<<mylist.Count()<<"\n";
-    mylist.Clear();
+    //mylist.Clear();
+    mylist.Remove(10);
+    mylist.Remove(40);
+    mylist.Remove(20);
+    mylist.Remove(10);
     mylist.Display();
     cout<<"list count is "<<mylist.Count()<<"\n";
+    mylist.Add(40);
+    mylist.Add(40);    
+    mylist.Display();
 }
