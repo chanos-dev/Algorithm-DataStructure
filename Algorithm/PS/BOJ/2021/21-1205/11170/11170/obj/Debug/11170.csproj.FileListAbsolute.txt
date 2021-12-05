@@ -1,0 +1,7 @@
+C:\Users\Chanos\Desktop\git\Algorithm-DataStructure\Algorithm\PS\BOJ\2021\21-1205\11170\11170\bin\Debug\11170.exe.config
+C:\Users\Chanos\Desktop\git\Algorithm-DataStructure\Algorithm\PS\BOJ\2021\21-1205\11170\11170\bin\Debug\11170.exe
+C:\Users\Chanos\Desktop\git\Algorithm-DataStructure\Algorithm\PS\BOJ\2021\21-1205\11170\11170\bin\Debug\11170.pdb
+C:\Users\Chanos\Desktop\git\Algorithm-DataStructure\Algorithm\PS\BOJ\2021\21-1205\11170\11170\obj\Debug\11170.csproj.AssemblyReference.cache
+C:\Users\Chanos\Desktop\git\Algorithm-DataStructure\Algorithm\PS\BOJ\2021\21-1205\11170\11170\obj\Debug\11170.csproj.CoreCompileInputs.cache
+C:\Users\Chanos\Desktop\git\Algorithm-DataStructure\Algorithm\PS\BOJ\2021\21-1205\11170\11170\obj\Debug\11170.exe
+C:\Users\Chanos\Desktop\git\Algorithm-DataStructure\Algorithm\PS\BOJ\2021\21-1205\11170\11170\obj\Debug\11170.pdb
