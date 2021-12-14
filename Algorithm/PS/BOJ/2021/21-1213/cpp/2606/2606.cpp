@@ -35,5 +35,5 @@ int main()
     }
 
     check(1);
-    cout << cnt;
+    cout << cnt-1;
 }
