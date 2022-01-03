@@ -21,8 +21,19 @@ void nm(int k)
 
     for(int i=0; i<n; i++)
     {
-        arr[k] = vec[i];
-        nm(k+1);
+        if (!used[i])
+        {
+            if (k > 0)
+            {
+                if (arr[k-1] > vec[i])
+                    continue;
+            }
+
+            arr[k] = vec[i];
+            used[i] = true;
+            nm(k+1);
+            used[i] = false;
+        }
     }
 }
 
