@@ -44,10 +44,8 @@ int main()
 //     for(int i=0; i<n; i++)
 //         cin>>arr[i];
     
-//     sort(arr, arr+n);
+//     sort(arr, arr+n); 
 
-//     int s = 0;
-//     int e = n-1;
 //     int minV = 2100000000;
 //     for(int i=0; i<n; i++)
 //     {
